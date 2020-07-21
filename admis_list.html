@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>입학원서 접수리스트</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap_sub1">
+    <div id="container_s2">
+      <!-- header title -->
+      <header id="cmn_head02">
+        <h1 class="sub1_tit">고교 교사 등록/관리</h1>
+      </header>
+      <!-- 학력사항 입력-->
+      <article id="sbtye03">
+        <!-- 관리자 메뉴 -->
+        <ul class="ad_menu">
+          <li><a href="admin.html" >교사 회원 관리</a></li>
+          <li><a href="master_set.html" >총괄 교사 설정</a></li>
+          <li class="active"><a href="admis_list.html" >입학원서접수리스트</a></li>
+        </ul>
+
+        <!-- 타이틀 -->
+        <div class="ad_tit_area">
+          <h2 class="sub_tit01">입학원서접수리스트</h2>
+        </div>
+
+        <!-- 리스트 시작  -->
+        <div class="title_area mt10">
+            <!-- 전체게시물 -->
+            <span class="totnum_area02">Total Archive 231 / Total Page <span id="totCntRunList" class="tot_search_num">23</span></span>
+
+            <!-- 게시판 상단 검색 -->
+            <span class="select_search01">
+              <label for="search_sel" class="blind"></label>
+              <select id="h5_ty01" name="h5_ty01" class="h3_select_left">
+                  <option>제목</option>
+                  <option>선택2</option>
+                  <option>선택3</option>
+              </select>
+              <label for="search" class="blind">검색 입력</label>
+              <input type="text" id="search" id="regist_date"  class="input_comn" name="search" placeholder="키워드 입력" />
+              <button type="submit" class="h3_btn_search">검색</button>
+            </span>
+        </div>
+
+        <table class="board1" summary="검색된 상담자료 리스트입니다.">
+            <caption>검색된 상담자료 건</caption>
+            <colgroup>
+                <col width="4%" />
+                <col width="6%" />
+                <col width="10%" />
+                <col width="12%" />
+                <col width="9%" />
+                <col width="12%" />
+                <col width="13%" />
+                <col width="10%" />
+                <col width="16%" />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="fir_th">
+                      <label for="total_chk_select" class="blind">전체선택</label>
+                      <input type="checkbox" id="total_chk_select" />
+                    </th>
+                    <th scope="col" >번호</th>
+                    <th scope="col" >이름</th>
+                    <th scope="col" >모집구분</th>
+                    <th scope="col" >출신고교</th>
+                    <th scope="col" >졸업년도</th>
+                    <th scope="col" >접수처</th>
+                    <th scope="col" >접수일시</th>
+                    <th scope="col" >전화번호</th>
+                    <th scope="col" >합격여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>10</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>9</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="cRed">불합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>8</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>7</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>6</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>5</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>4</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>3</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>2</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+                <tr>
+                    <td class="rc_span">
+                      <label for="indi_chk_select" class="blind">선택</label>
+                      <input type="checkbox" id="indi_chk_select" />
+                    </td>
+                    <td>1</td>
+                    <td>김소율</td>
+                    <td>수시1차</td>
+                    <td>2020예정</td>
+                    <td>2020-11-11</td>
+                    <td>제2접수처(고교)</td>
+                    <td>A019001</td>
+                    <td>010-0000-0000</td>
+                    <td><p class="txt_blue">합격</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--페이징 처리-->
+<script type="text/javascript" src="js/jquery.twbsPagination.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        gfn_paging( "#pagination" , 100 , 1 , 10 );
+    });
+</script>
+<!--//페이징 처리-->
+
+                    <!-- 페이징 -->
+                    <div class="paging" id="paginationholder">
+                        <ul id="pagination" class="pages"></ul>
+                    </div>
+                    <!-- //페이징 -->
+
+        <div class="bottom_btn_area2">
+          <button class="cmn_btn05">EXEL 다운로드</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

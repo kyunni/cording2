@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>무료 원서 접수</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap_sub2">
+    <div id="container_s2">
+      <!-- header title -->
+      <header id="cmn_head01">
+        <h1 class="sub1_tit">무료 원서 접수</h1>
+      </header>
+
+      <!-- 학력사항 입력-->
+      <article id="sbtye02">
+        <div class="tit_area">
+          <h2 class="sub_tit01">학력사항</h2>
+          <p class="tb_top_tx01"><span>*</span>표시된 항목은 필수 입력사항입니다.</p>
+        </div>
+
+        <div class="applic_write">
+          <table class="board_write" summary="원서 접수를 위한 학력사항 입력">
+            <caption>학력사항</caption>
+            <colgroup>
+              <col width="16%"/>
+              <col width="34%"/>
+              <col width="16%"/>
+              <col width="*"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                  <th><label for="ty01">수험번호</label></th>
+                  <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                  <th><label for="ty01">접수처</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                        <option>제2접수처1(고교)</option>
+                        <option>접수처2</option>
+                        <option>접수처3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">성명(한글)</label><span>*</span></th>
+                  <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                  <th><label for="ty02">접수일시</label></th>
+                  <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">주민번호</label><span>*</span></th>
+                  <td colspan="3"><input type="text" id="ty01" class="inp_ty01" /></td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">졸업(예정)년도</label><span>*</span></th>
+                  <td colspan="3">
+                    <input type="text" id="ty01" class="inp_ty01 mr10"  />
+                    <input id="admiss_chk" type="radio" class="chk_cmn01 mt5">
+                    <label for="admiss_chk" style="line-height:24px;margin-right:20px;">인문계</label>
+                    <input id="confirm_chk" type="radio" class="chk_cmn01 mt5">
+                    <label for="confirm_chk" style="line-height:24px;">전문계</label>
+                  </td>
+                </tr>
+                <tr>
+                    <th><label for="ty02">고교(검정)코드</label><span>*</span></th>
+                    <td>
+                        <span class="id_check_area01">
+                            <input type="text" id="ty02" class="inp_ty01" value="JI00000763" />
+                        </span>
+                        <p class="btm_tx01">해당 고등학교 학생만 등록이 가능합니다.</p>
+                    </td>
+                    <th><label for="ty01">고교(검정)명</label><span>*</span></th>
+                    <td><input type="text" id="ty01" class="inp_ty01" value="이천제일고등학교" /></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 지원사항 입력 -->
+        <div class="tit_area">
+          <h2 class="sub_tit01">지원사항</h2>
+        </div>
+
+        <div class="applic_write">
+          <table class="board_write" summary="원서 접수를 위한 지원사항 입력">
+            <caption>지원사항</caption>
+            <colgroup>
+              <col width="16%"/>
+              <col width="34%"/>
+              <col width="16%"/>
+              <col width="*"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                  <th><label for="ty01">입시년도</label><span>*</span></th>
+                  <td><input type="text" id="ty01" class="inp_ty01" value="2020" /></td>
+                  <th><label for="ty01">모집구분</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>수시3차</option>
+                      <option>수시2차</option>
+                      <option>수시1차</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">지망학과</label><span>*</span></th>
+                  <td colspan="3">
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">전형방법</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                  <th><label for="ty02">지원자구분</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 지원사항 2번째 입력 -->
+        <div class="tit_area" style="margin-top:20px;">
+          <h2 class="sub_tit01">지원사항</h2>
+        </div>
+
+        <div class="applic_write">
+          <table class="board_write" summary="원서 접수를 위한 두번째 지원사항 입력">
+            <caption>두번째 지원사항</caption>
+            <colgroup>
+              <col width="16%"/>
+              <col width="34%"/>
+              <col width="16%"/>
+              <col width="*"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                  <th><label for="ty01">입시년도</label><span>*</span></th>
+                  <td><input type="text" id="ty01" class="inp_ty01" value="2020" /></td>
+                  <th><label for="ty01">모집구분</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>수시3차</option>
+                      <option>수시2차</option>
+                      <option>수시1차</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">지망학과</label><span>*</span></th>
+                  <td colspan="3">
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">전형방법</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                  <th><label for="ty02">지원자구분</label><span>*</span></th>
+                  <td>
+                    <select id="ty07" class="sel_ty02">
+                      <option>선택하세요</option>
+                    </select>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 학생연락처 입력 -->
+        <div class="tit_area">
+          <h2 class="sub_tit01">학생연락처</h2>
+        </div>
+
+        <div class="applic_write">
+          <table class="board_write" summary="원서 접수를 위한 학생연락처 입력">
+            <caption>학생연락처</caption>
+            <colgroup>
+              <col width="16%"/>
+              <col width="34%"/>
+              <col width="16%"/>
+              <col width="*"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                  <th><label for="ty02">도로명주소</label><span>*</span></th>
+                  <td colspan="3">
+                    <label for="zip1" class="blind">우편번호 앞 자리 입력</label>
+                    <input type="text" title="우편번호 앞 자리 입력" class="inp_ty03" style="width:60px;margin-bottom:5px;" name="zip1" id="zip1" readonly>
+                    <span class="line01">-</span>
+                    <label for="zip2" class="blind">우편번호 뒷 자리 입력</label>
+                    <input type="text" title="우편번호 뒷 자리 입력" class="inp_ty03" style="width:60px;margin-bottom:5px;" name="zip2" id="zip2" readonly>
+                    <button class="btn_ovlap" onClick="popOpen('pop_id_chk');" style="margin-right:500px;">우편번호</button>
+                    <input type="text" class="inp_ty01 map_td05" style="width:680px;margin-right:120px;" name="add2" id="add2">
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">본인휴대폰</label><span>*</span></th>
+                  <td>
+                    <label for="hp_fnum"></label>
+                    <select id="ht_fstnum" class="sel_ty01">
+                        <option>선택</option>
+                    </select>
+                    <span class="line01">-</span> 
+                    <label for="hp_snum"></label>
+                    <input type="text" id="hp_snum" class="inp_ty03" />
+                    <span class="line01">-</span> 
+                    <label for="hp_tnum"></label>
+                    <input type="text" id="hp_tnum" class="inp_ty03" />
+                  </td>
+                  <th><label for="ty02">기타연락처1</label></th>
+                  <td>
+                    <label for="hp_fnum"></label>
+                    <select id="ht_fstnum" class="sel_ty01">
+                        <option>선택</option>
+                    </select>
+                    <span class="line01">-</span> 
+                    <label for="hp_snum"></label>
+                    <input type="text" id="hp_snum" class="inp_ty03" />
+                    <span class="line01">-</span> 
+                    <label for="hp_tnum"></label>
+                    <input type="text" id="hp_tnum" class="inp_ty03" />
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="ty02">기타연락처2</label></th>
+                  <td>
+                    <label for="hp_fnum"></label>
+                    <select id="ht_fstnum" class="sel_ty01">
+                        <option>선택</option>
+                    </select>
+                    <span class="line01">-</span> 
+                    <label for="hp_snum"></label>
+                    <input type="text" id="hp_snum" class="inp_ty03" />
+                    <span class="line01">-</span> 
+                    <label for="hp_tnum"></label>
+                    <input type="text" id="hp_tnum" class="inp_ty03" />
+                  </td>
+                  <th><label for="ty02">기타연락처3</label></th>
+                  <td>
+                    <label for="hp_fnum"></label>
+                    <select id="ht_fstnum" class="sel_ty01">
+                        <option>선택</option>
+                    </select>
+                    <span class="line01">-</span> 
+                    <label for="hp_snum"></label>
+                    <input type="text" id="hp_snum" class="inp_ty03" />
+                    <span class="line01">-</span> 
+                    <label for="hp_tnum"></label>
+                    <input type="text" id="hp_tnum" class="inp_ty03" />
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- 환불용 계좌번호입력-->
+        <article id="sbtye02">
+          <div class="tit_area">
+            <h2 class="sub_tit01">환불용 계좌번호</h2>
+          </div>
+  
+          <div class="applic_write">
+            <table class="board_write" summary="원서 접수를 위한 환불용 계좌번호 입력">
+              <caption>환불용 계좌번호</caption>
+              <colgroup>
+                <col width="16%"/>
+                <col width="34%"/>
+                <col width="16%"/>
+                <col width="*"/>
+              </colgroup>
+              <tbody>
+                  <tr>
+                    <th><label for="ty01">은행명</label></th>
+                    <td>
+                      <select id="ty07" class="sel_ty02">
+                          <option>선택하세요</option>
+                          <option>국민은행</option>
+                          <option>우리은행</option>
+                      </select>
+                    </td>
+                    <th><label for="ty01">예금주</label></th>
+                    <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                  </tr>
+                  <tr>
+                    <th><label for="ty02">계좌번호</label></th>
+                    <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                    <th><label for="ty02">예금주와의 관계</label></th>
+                    <td><input type="text" id="ty01" class="inp_ty01" /></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <span class="agree_btm_tx ty02">
+            <input type="checkbox" class="ck_ty01" id="agree02" /> <label for="agree02">개인정보 수집 및 이용동의</label>
+            <button class="btn_ovlap02" onclick="location.href='indi_agree_full_view.html'">전문보기</button>
+          </span>
+
+          <span class="agree_tx01">
+            ※ 수시(1,2차)모집은 2개 학과까지 복수지원 가능하며, 추가로 다른 과를 지원할 경우에는 유웨이,진학사에서 유로로 1부 더 지원할 수있습니다.
+          </span>
+
+          <div class="bottom_btn_area">
+            <button class="cmn_btn01">등록</button>
+            <button class="cmn_btn04">취소</button>
+          </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

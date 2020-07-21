@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고교 교사 등록/관리</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap_sub1">
+    <div id="container_s2">
+      <!-- header title -->
+      <header id="cmn_head02">
+        <h1 class="sub1_tit">고교 교사 등록/관리</h1>
+      </header>
+      <!-- 학력사항 입력-->
+      <article id="sbtye03">
+        <!-- 관리자 메뉴 -->
+        <ul class="ad_menu">
+          <li class="active"><a href="admin.html" >교사 회원 관리</a></li>
+          <li><a href="master_set.html" >총괄 교사 설정</a></li>
+          <li><a href="admis_list.html" >입학원서접수리스트</a></li>
+        </ul>
+
+        <!-- 타이틀 -->
+        <div class="ad_tit_area">
+          <h2 class="sub_tit01">교사 회원 관리</h2>
+        </div>
+
+        <!-- 검색영역 -->
+        <div class="search_form">
+          <h2 class="blind">검색</h2>
+          <form action="" method="get" id="searchForm" name="searchForm">
+          <fieldset>
+          <legend>검색 폼</legend>
+              <span class="searching">
+                  <label for="category" class="blind">전체검색</label>
+                  <select title="유형" name="category" id="category" class="type_select01 mr5">
+                      <option value="선택">전체검색</option>
+                      <option value="선택1">선택1</option>
+                      <option value="선택2">선택2</option>
+                  </select>
+                  <label for="search_sel" class="blind">검색항목 선택1</label>
+                  <select title="검색" name="search_sel"  class="type_select02 mr5" id="search_sel">
+                      <option value="선택">제목</option>
+                      <option value="선택1">선택1</option>
+                      <option value="선택2">선택2</option>
+                  </select>
+                  <label for="search_sel" class="blind">검색항목 선택2</label>
+                  <select title="검색" name="search_sel"  class="type_select02 mr5" id="search_sel">
+                      <option value="선택">제목</option>
+                      <option value="선택1">선택1</option>
+                      <option value="선택2">선택2</option>
+                  </select>
+                  <label for="search_num" class="blind">검색 숫자</label>
+                  <input type="text" id="search" id="search_num"   value="10" class="input_comn mr5" style="width:60px;" name="search_num" />
+                  <label for="search" class="blind">검색 입력</label>
+                  <input type="text" id="search" id="regist_date"  class="input_comn" name="search" />
+              </span>
+              <button type="submit" class="btn_search">검색</button>
+          </fieldset>
+          </form>
+        </div>
+        <!-- //검색영역  -->
+
+        <!-- 리스트 시작  -->
+        <div class="title_area mt10">
+            <span class="totnum_area">Total Archive 231 / Total Page <span id="totCntRunList" class="tot_search_num">23</span></span>
+        </div>
+
+        <table class="board1" summary="검색된 상담자료 리스트입니다.">
+            <caption>검색된 상담자료 건</caption>
+            <colgroup>
+                <col width="7%" />
+                <col width="18%" />
+                <col width="16%" />
+                <col width="15%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="fir_th">번호</th>
+                    <th scope="col" >그룹명</th>
+                    <th scope="col" >이름</th>
+                    <th scope="col" >아이디</th>
+                    <th scope="col" >가입일</th>
+                    <th scope="col" >승인여부</th>
+                    <th scope="col" >관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rc_span">210</td>
+                    <td>고교교사</td>
+                    <td>홍길동</td>
+                    <td>honggilpow958</td>
+                    <td>2018-11-11</td>
+                    <td>승인</td>
+                    <td>
+                      <button class="btn_ovlap04" onclick="location.href='tch_mem_info.html'">설정</button>
+                      <button class="btn_ovlap05" >삭제</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bottom_btn_area2">
+          <button class="cmn_btn01 mr5">회원등록</button>
+          <button class="cmn_btn05">EXEL 다운로드</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

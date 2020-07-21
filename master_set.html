@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보수정</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap_sub1">
+    <div id="container_s2">
+      <!-- header title -->
+      <header id="cmn_head02">
+        <h1 class="sub1_tit">고교 교사 등록/관리</h1>
+      </header>
+
+      <!-- 학력사항 입력-->
+      <article id="sbtye03">
+        <!-- 관리자 메뉴 -->
+        <ul class="ad_menu">
+          <li><a href="admin.html" >교사 회원 관리</a></li>
+          <li class="active"><a href="master_set.html" >총괄 교사 설정</a></li>
+          <li><a href="admis_list.html" >입학원서접수리스트</a></li>
+        </ul>
+
+        <!-- 관리자 제목 -->
+        <div class="ad_tit_area">
+            <h2 class="sub_tit01">총괄 교사 설정</h2>
+        </div>
+
+        <div class="set_area">
+          <!-- 검색영역 -->
+          <div class="hisch_srh">
+            <label for="" class="hisch_labe">고등학교</label>
+            <input type="text" class="hisch_inpt" value="경북고등학교" id="">
+            <button class="btn_ovlap06" onClick="popOpen('pop_cnst_dept');">고교선택</button>
+          </div>
+
+          <!-- 선생님 설정 -->
+          <div class="tch_select_area">
+            <div class="tch_set_left">
+              <h3 class="tch_txt1">선생님</h3>
+              <div class="tch_set_name">
+                <p class="left_teacher"><a href="" >황선생</a></p>
+                <p class="left_teacher">박선생</p>
+                <p class="left_teacher">손한석</p>
+                <p class="left_teacher">이승철</p>
+                <p class="left_teacher">홍길동</p>
+                <p class="left_teacher">이하늬</p>
+              </div>
+            </div>
+
+            <div class="set_btn_area">
+              <button class="btn_ovlap04_1">총괄 선생님 선택 ></button>
+              <button class="btn_ovlap05_1 mt10"> < 총괄 선생님 제거</button>
+            </div>
+
+            
+            <div class="tch_set_right">
+              <h3 class="tch_txt1">총괄 선생님</h3>
+              <div class="tch_set_name">
+                <p class="right_teacher"><a href="" >이익병</a></p>
+                <p class="right_teacher">홍상만</p>
+                <p class="right_teacher">이춘재</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_btn_area2">
+          <button class="cmn_btn01" >저장하기</button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+<!-- 고교선택팝업 -->
+<script>
+  function popOpen(layerName){
+    document.getElementById(layerName).style.display = 'block';
+    return false;
+  }
+  function popClose(layerName){
+    document.getElementById(layerName).style.display = 'none';
+    return false;
+  }
+  </script>
+  
+  <div id="pop_cnst_dept" class="pop_wrap_ty01">
+    <div class="pop_opa"></div>
+    <div class="pop_find_bx">
+          <div class="popwrap ty03">
+              <div class="pop_header">
+                  <h2>고교검색</h2>
+                  <a href="#" class="btn_close" onClick="popClose('pop_cnst_dept');"><img src="img/btn_pop_close.png" alt="팝업 닫기" /></a>
+              </div>
+
+              <div class="pop_container01">
+                <div class="exp_txt02">
+                  <span class="totnum_area"><span class="cRed">※</span> 검색하실 <span class="cRed">고교명</span>을 빈칸없이 입력하여 주십시요.(동일한 고교명일겨우 지역을 확인하시기 바랍니다.)</span>
+                </div>
+                  <!-- 검색 시작  -->
+                  <div class="search_form04">
+                      <form action="" method="get" id="searchForm" name="searchForm">
+                      <fieldset>
+                      <legend class="blind"">고교명 검색</legend>
+                          <div class="searching">
+                              <span class="search_input02">
+                                  <label for="sch_name"class="ty01">고교명</label>
+                                  <input type="text" id="search" id="sch_name"  class="input_comn" name="sch_name" />
+                                  <button type="submit" class="btn_search">검색</button>
+                              </span>
+                          </div>
+                      </fieldset>
+                      </form>
+                  </div>
+                  <!-- //검색 끝  -->
+  
+                  <div class="board_wrap01 mt10">
+                      <!-- 검색결과 시작  -->
+  
+                      <div class="table_list_result mb20">
+                          <table class="board_view01 comn" summary="고교명 검색결과입니다.">
+                              <caption>고교명 검색결과</caption>
+                              <colgroup>
+                                  <col class="th_td01">
+                                  <col class="th_td02">
+                                  <col class="th_td03">
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th scope="col">학교명</th>
+                                      <th scope="col">10자리 코드</th>
+                                      <th scope="col">지역</th>
+                                  </tr>
+                              </thead>
+                          </table>
+  
+                          <div class="tobody_scroll_01 mb10">
+                          <table class="board_view01 comn2" summary="검색된 회원목록입니다.">
+                              <caption>검색된 회원목록</caption>
+                              <colgroup>
+                                  <col class="td_td01">
+                                  <col class="td_td02">
+                                  <col class="td_td03">
+                              </colgroup>
+                              <tbody>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">서울</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>1258963257</td>
+                                      <td class="noti_tit">부산</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">인천</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">전남</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">서울</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>1258963257</td>
+                                      <td class="noti_tit">부산</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">인천</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="noti_tit">OOO 고등학교</td>
+                                      <td>00000000000</td>
+                                      <td class="noti_tit">전남</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          </div>
+                      </div>
+                  <!-- 검색결과 끝  -->
+                  </div>
+  
+                  <div class="btm_btns">
+                      <button class="cmn_btn01" onClick="popClose('pop_cnst_dept');">확인</button>
+                  </div>
+  
+              </div>
+          </div>
+    </div>
+  </div>
+  <!-- //고교선택팝업 -->
+</body>
+</html>
